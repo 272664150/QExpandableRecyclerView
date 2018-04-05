@@ -1,6 +1,7 @@
 # QExpandableRecyclerView
 支持空态显示和可展开二级列表的RecyclerView
-
+![可展开二级列表](https://github.com/272664150/QExpandableRecyclerView/screenshots/20180406015027.png)
+![空态显示](https://github.com/272664150/QExpandableRecyclerView/screenshots/20180406014959.png)
 
 可展开二级列表：
 -----
@@ -9,7 +10,7 @@
     用Object类型是为了把不同数据都装进一个list中。将传入的数据和显示的数据分开，维护一个显示数据列表，展开就添加item，收起就移
     除item，这样添加和移除可以利用RecyclerView的默认动画。
 
-<br>2.局部控件刷新
+2.局部控件刷新
 ##
         onBindViewHolder(RecyclerView.ViewHolder holder, int position, List<Object> payloads)
         notifyItemRangeChanged(int positionStart, int itemCount, Object payload)
