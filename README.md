@@ -1,7 +1,6 @@
 # QExpandableRecyclerView
 支持空态显示和可展开二级列表的RecyclerView
-![可展开二级列表](https://github.com/272664150/QExpandableRecyclerView/screenshots/20180406015027.png)
-![空态显示](https://github.com/272664150/QExpandableRecyclerView/screenshots/20180406014959.png)
+![可展开二级列表](https://github.com/272664150/QExpandableRecyclerView/blob//master/screenshots/20180406014959.png) ![空态显示](https://github.com/272664150/QExpandableRecyclerView/blob/master/screenshots/20180406015027.png)
 
 可展开二级列表：
 -----
