@@ -13,5 +13,6 @@
 
     <include
         android:id="@+id/empty_status"
-        layout="@layout/view_empty_status" />
+        layout="@layout/view_empty_status"
+        android:visibility="gone" />
 </LinearLayout>
