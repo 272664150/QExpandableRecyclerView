@@ -1,6 +1,6 @@
 # QExpandableRecyclerView
 支持空态显示和可展开二级列表的RecyclerView<br>
-![可展开二级列表](https://github.com/272664150/QExpandableRecyclerView/blob//master/screenshots/20180406014959.png)    ![空态显示](https://github.com/272664150/QExpandableRecyclerView/blob/master/screenshots/20180406015027.png)
+![空态显示](https://github.com/272664150/QExpandableRecyclerView/blob/master/screenshots/1.png)  ![可展开二级列表](https://github.com/272664150/QExpandableRecyclerView/blob//master/screenshots/2.png)
 
 可展开二级列表：
 -----
@@ -26,13 +26,13 @@
 ##
     View inflate = LayoutInflater.from(this).inflate(R.layout.view_empty_status, null, false); //root为null
     recyclerView.setEmptyView(inflate);
-    recyclerView.setAdapter(...); //可以不setAdapter，与setEmptyView无次序关系
+    recyclerView.setAdapter(...);
 
 用法二：
 ##
     View inflate = View.inflate(this, R.layout.view_empty_status, null); //root为null
     recyclerView.setEmptyView(inflate);
-    recyclerView.setAdapter(...); //可以不setAdapter，与setEmptyView无次序关系
+    recyclerView.setAdapter(...);
 
 用法三：
 ##
@@ -54,4 +54,4 @@
     </LinearLayout>
 
     recyclerView.setEmptyView(findViewById(R.id.empty_status));
-    recyclerView.setAdapter(...); //可以不setAdapter，与setEmptyView无次序关系
+    recyclerView.setAdapter(...);

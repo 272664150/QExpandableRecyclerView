@@ -72,7 +72,7 @@ public class QRecyclerViewEmptySupport extends RecyclerView {
                 parent.removeView(mEmptyView);
             }
 
-            ((ViewGroup) this.getRootView()).addView(mEmptyView);
+            ((ViewGroup) this.getParent()).addView(mEmptyView, ((ViewGroup) this.getParent()).indexOfChild(this), getLayoutParams());
         }
         mObserver.onChanged();
     }
