@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class QRecyclerViewEmptySupport extends RecyclerView {
+
     private volatile boolean isRealEmpty;
 
     private View mEmptyView;
@@ -23,19 +24,19 @@ public class QRecyclerViewEmptySupport extends RecyclerView {
 
             if (adapter.getItemCount() == 0) {
                 isRealEmpty = true;
-                RecyclerViewEmptySupport.this.postDelayed(new Runnable() {
+                QRecyclerViewEmptySupport.this.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         if (isRealEmpty) {
                             mEmptyView.setVisibility(VISIBLE);
-                            RecyclerViewEmptySupport.this.setVisibility(GONE);
+                            QRecyclerViewEmptySupport.this.setVisibility(GONE);
                         }
                     }
                 }, 300);
             } else {
                 isRealEmpty = false;
                 mEmptyView.setVisibility(GONE);
-                RecyclerViewEmptySupport.this.setVisibility(VISIBLE);
+                QRecyclerViewEmptySupport.this.setVisibility(VISIBLE);
             }
         }
 
